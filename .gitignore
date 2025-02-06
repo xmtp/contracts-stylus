@@ -1,2 +1,34 @@
 /target
 .env
+**/target
+**/*.rs.bk
+bin/
+pkg/
+
+# Logs
+logs
+*.log
+
+# Runtime data
+pids
+*.pid
+*.seed
+*.pid.lock
+
+# dotenv environment variables file
+.env
+.env.test
+
+# Stores VSCode versions used for testing VSCode extensions
+.vscode
+.vscode-test
+
+# JetBrains IDE Info
+.idea/
+
+# Swap files for vim
+*.swp
+*.swo
+
+# OS files
+.DS_Store
