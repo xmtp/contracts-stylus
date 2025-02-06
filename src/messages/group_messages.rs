@@ -15,7 +15,7 @@ use alloc::vec::Vec;
 use alloy_primitives::{U256, FixedBytes, Bytes};
 use stylus_sdk::{
     evm,
-    prelude::storage,
+    prelude::{storage, entrypoint},
     storage::StorageU256,
     stylus_proc::public,
 };
@@ -28,6 +28,7 @@ sol! {
 
 
 /// State of a [`GroupMessages`] Contract.
+#[entrypoint]
 #[storage]
 pub struct GroupMessages {
     pub sequence_id: StorageU256
