@@ -1,14 +1,6 @@
 //! XMTP Group Messages Contract.
 //!
-//! Contract module which allows implementing an emergency stop mechanism
-//! that can be triggered by an authorized account.
-//!
-//! It provides functions [`Pausable::when_not_paused`]
-//! and [`Pausable::when_paused`],
-//! which can be added to the functions of your contract.
-//!
-//! Note that your contract will not be pausable by simply including this
-//! module, only once and where you use [`Pausable::when_not_paused`].
+//! This contract is used to store and retrieve messages for a group.
 //!
 use alloc::vec::Vec;
 
